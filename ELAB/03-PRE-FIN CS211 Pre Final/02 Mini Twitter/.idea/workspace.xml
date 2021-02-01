@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd4c4c6d-bcd7-417c-b98b-f2c8590789bc" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SKNeXmOMlCkrObR8Bs3qjrMH0U" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../04 Property" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainProgram" />
+      <module name="02 Mini Twitter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainProgram" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd4c4c6d-bcd7-417c-b98b-f2c8590789bc" name="Default Changelist" comment="" />
+      <created>1571308422137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571308422137</updated>
+      <workItem from="1571308423303" duration="5639000" />
+      <workItem from="1571314073924" duration="1298000" />
+      <workItem from="1571320911970" duration="3223000" />
+      <workItem from="1571327007413" duration="53000" />
+      <workItem from="1571332083812" duration="425000" />
+      <workItem from="1571581957647" duration="46000" />
+      <workItem from="1571583337622" duration="44000" />
+      <workItem from="1571590336927" duration="493000" />
+      <workItem from="1571659412143" duration="28000" />
+      <workItem from="1572164253931" duration="128000" />
+      <workItem from="1572167583159" duration="924000" />
+      <workItem from="1572627831142" duration="808000" />
+      <workItem from="1572671697018" duration="88000" />
+      <workItem from="1573980300669" duration="1591000" />
+      <workItem from="1573981967528" duration="82000" />
+      <workItem from="1574006746494" duration="1048000" />
+      <workItem from="1574058791036" duration="26000" />
+      <workItem from="1574080619335" duration="320000" />
+      <workItem from="1574246383703" duration="157000" />
+      <workItem from="1574346893577" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

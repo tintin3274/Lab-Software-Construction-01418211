@@ -1,0 +1,1 @@
+java -jar lab12-6110405949.jar athlete1.csv athlete2.csv athlete3.csv athlete4.csv athlete5.csv athlete6.csv athlete7.csv athlete8.csv

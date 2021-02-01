@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: a2eeb7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="to_do_list.Controller">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="146.0" prefWidth="1290.0" style="-fx-background-color: a2eeb7;" AnchorPane.bottomAnchor="583.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar disable="true" layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TextField fx:id="titleFieldInput" layoutX="300.0" layoutY="46.0" prefHeight="25.0" prefWidth="457.0" promptText="&lt;Insert title&gt;" />
+            <TextArea fx:id="descriptionFieldInput" layoutX="770.0" layoutY="40.0" prefHeight="87.0" prefWidth="487.0" promptText="&lt;Insert description&gt;" />
+            <Button fx:id="saveButton" layoutX="498.0" layoutY="94.0" mnemonicParsing="false" onAction="#handleSaveButtonOnAction" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #ffcc66;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <DatePicker fx:id="dateFieldInput" layoutX="98.0" layoutY="94.0" prefHeight="25.0" prefWidth="155.0" promptText="&lt;Choose a date&gt;" />
+            <Label layoutX="246.0" layoutY="44.0" text="Title:" textFill="#1c38ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="645.0" layoutY="92.0" text="Description:" textFill="#ff3399">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="92.0" text="Date:" textFill="#b136ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="30.0" text="Todo List" textFill="#20d359">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="hourFieldInput" layoutX="328.0" layoutY="94.0" prefHeight="25.0" prefWidth="73.0" />
+            <Spinner fx:id="minuteFieldInput" layoutX="401.0" layoutY="94.0" prefHeight="25.0" prefWidth="73.0" />
+            <Label layoutX="272.0" layoutY="92.0" text="Time:" textFill="#ff9933">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" layoutY="145.0" prefHeight="584.0" prefWidth="565.0" style="-fx-background-color: a2e8ee;">
+         <children>
+            <TableView fx:id="listTable" layoutX="21.0" layoutY="-1.0" onMouseClicked="#handleTableClicked" prefHeight="584.0" prefWidth="526.0">
+              <columns>
+                <TableColumn fx:id="dateTable" editable="false" prefWidth="101.99996948242188" resizable="false" text="Date" visible="false" />
+                  <TableColumn fx:id="date_timeTable" editable="false" prefWidth="109.0" resizable="false" text="Date / Time" />
+                <TableColumn fx:id="titleTable" editable="false" prefWidth="334.0" resizable="false" text="Title" />
+                  <TableColumn fx:id="statusTable" editable="false" prefWidth="84.0" resizable="false" text="Status" />
+                  <TableColumn fx:id="descriptionTable" editable="false" minWidth="0.0" prefWidth="0.0" resizable="false" sortable="false" text="Description" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="561.0" layoutY="145.0" prefHeight="584.0" prefWidth="729.0" style="-fx-background-color: dba2ee;">
+         <children>
+            <Label layoutX="302.0" text="&lt;Details&gt;" textFill="#9933ff">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="50.0" text="Title:" textFill="#4c00e6">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="134.0" text="Description:" textFill="#4c00e6">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="92.0" text="Date / Time:" textFill="#4c00e6">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="titleFieldShow" editable="false" layoutX="88.0" layoutY="53.0" prefHeight="25.0" prefWidth="607.0" promptText="Select the title in the table." />
+            <TextArea fx:id="descriptionFieldShow" editable="false" layoutX="36.0" layoutY="169.0" prefHeight="395.0" prefWidth="663.0" promptText="Select the data in the table to display all the details." />
+            <Button fx:id="statusButton" layoutX="501.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleStatusButton" prefHeight="25.0" prefWidth="194.0" style="-fx-background-color: #00cc66;" text="Status" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="removeButton" layoutX="405.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleRemoveButton" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #ff5050;" text="Remove" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <DatePicker fx:id="dateFieldShow" accessibleRole="TEXT" editable="false" layoutX="152.0" layoutY="137.0" prefHeight="25.0" prefWidth="194.0" promptText="Select the date in the table." visible="false" />
+            <TextField fx:id="date_timeFieldShow" editable="false" layoutX="152.0" layoutY="95.0" prefHeight="25.0" prefWidth="131.0" promptText="Select the Date/Time." />
+            <Button fx:id="editButton" layoutX="309.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #3399ff;" text="Edit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

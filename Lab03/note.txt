@@ -1,0 +1,8 @@
+﻿สร้าง view ต้องสร้างคู่กับ controller
+view นามสกุล .fxml
+controller นามสกุล .java
+
+หน้า windows คือ stage
+หน้าขาวด้านใน คือ scene
+
+Platform.runLater ทำให้รันทีหลัง

@@ -1,0 +1,16 @@
+removeButton
+editButton
+addButton
+searchTextField
+wordTextField
+partOfSpeechTextField
+meaningTextArea
+dictionaryTable
+wordTable
+partOfSpeechTable
+exportXMLButton
+exportJSONButton
+
+displayFormatLabel
+copyButton
+exportTextArea

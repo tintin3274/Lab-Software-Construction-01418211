@@ -1,0 +1,20 @@
+3
+Sofia Henry Emma
+3
+Statistics 4
+Java 3
+Unix 3
+6
+5
+Henry Statistics
+Emma Java
+Sofia Java
+Sofia Unix
+Emma Statistics
+
+
+4
+Cash 200
+Stock 10 4
+Stock 2 5
+Travel Yen 3000 0.1 USD 5 30
